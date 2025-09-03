@@ -1,0 +1,39 @@
+/* 선택할 수 있는 엘리먼트를 최대한 선택해야한다. */
+
+.header-top {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0 220px 0 220px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 왼쪽 영역 */
+.header-top > .header-top-tel > span {
+    font-size: 16px;
+    color: #666666;
+    font-weight: 600;
+    display: block;
+}
+
+.header-top > .header-top-tel > a {
+    font-size: 21px;
+    line-height: 34px;
+    color: #6842ff;
+    font-weight: 900;
+}
+
+/* 오른쪽 영역 */
+.logo {
+    width: 200px;
+    height: 34px;
+}
+
+.header-nav-item {
+    display: flex;
+    list-style: none;
+    max-width: 1200px;
+    margin: auto;
+    justify-content: center;
+    gap: 120px
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - 구조를 설계하는 능력</title>
+    <style>
+        footer {
+            color: rgba(165, 42, 42, 0.801);
+        }
+    </style>
+</head>
+<body>
+    <h2>문의하기</h2>
+    <ul>
+        <li>
+            <label for="name">이름</label>
+            <input type="text" placeholder="이름을 작성해주세요" id="name"/>
+        </li>
+        <li>
+            <span>이메일</span>
+            <input type="email" placeholder="이메일을 작성해주세요" id="email">
+        </li>
+        <li>
+            <span>문의유형</span>
+            <input type="radio" name="radio" id="bug">
+            <label for="bug">버그 제보</label>
+            <input type="radio" name="radio" id="feature">
+            <label for="feature">기능 요청</label>
+        </li>  
+        <li>
+            <span>뉴스레터 수신 동의</span>
+            <input type="checkbox" /> 
+        </li>
+            <li>
+            <span>메시지</span>
+            <input type="text" />
+        </li>
+        <li>
+            <button>보내기</button>
+        </li>
+    </ul>
+    <footer>ⓒ 2025 HTML 연습 페이지</footer>
+</body>
+</html>

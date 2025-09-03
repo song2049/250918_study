@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>댓글 수정 페이지</title>
+    <link rel="stylesheet" href="./public/css/comment/common.css">
+    <link rel="stylesheet" href="./public/css/comment/update.css">
+    <link rel="stylesheet" href="./public/css/sidebar/sidebar.css">
+</head>
+<body>
+    <div id="comments">
+        <h1>댓글 수정</h1>
+        <div class="inner">
+            <form action="./list.html" class="comment-info" method="get">
+                <div class="comment-info-item">
+                    <strong>유저 아이디</strong>
+                    <input type="text" name="userId">
+                </div>
+                <div class="comment-info-item">
+                    <strong>제목</strong>
+                    <input type="text" name="title">
+                </div>
+                <div class="comment-info-item">
+                    <strong>내용</strong>
+                    <input type="text" name="content">
+                </div>
+                <div class="item-button">
+                    <button type="button" onclick="window.location.href = `./list.html`">댓글 목록</button>
+                    <button type="submit">수정 완료</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="./public/js/comment/update.js"></script>
+</body>
+</html>
+
+<!-- 
+    <input type="checkbox" id="sidebar-toggle" hidden>
+    <label for="sidebar-toggle" class="toggle-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+    <div id="sidebar">
+        <img id="logo" src="./public/img/logo.png" alt="이미지 없음">
+        <ul>
+            <li><a href="#">모집중인 강의</a></li>
+            <li><a href="#">경일스토리</a></li>
+        </ul>
+    </div>
+-->

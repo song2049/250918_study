@@ -1,0 +1,35 @@
+body { 
+    background-color: black;
+}
+h2 {
+    color: hotpink;
+    text-align: center;
+    position: relative;
+}
+h2::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 20%;
+    width: 60%;
+    border-bottom: 3px solid white;
+}
+#gugudan {
+    text-align: center;
+    color: hotpink;
+    padding: 10px;
+    font-size: 15px;
+}
+.gugudan-item > h2::after {
+    border-bottom: 3px solid hotpink;
+}
+li{
+    width: 10%;
+    display: inline-block;
+    border: 10px inset gold;
+    background-color: white;
+    border-radius: 55px;
+    margin: 15px;
+    padding: 5px;
+    min-width: 100px;
+}

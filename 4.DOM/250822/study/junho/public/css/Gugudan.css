@@ -1,0 +1,19 @@
+#gugudan-Game {  
+    list-style: none;
+    align-items: center;
+}
+
+li {
+   display: inline-block;
+   font-weight: bold;
+   color: cornflowerblue;
+   background-color: navajowhite;
+   margin: 20px;
+   padding: 30px;
+   border-radius: 30px;
+}
+
+p {
+    font-weight: 500;
+    color: black
+}

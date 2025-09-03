@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1차 월별 평가 - 게시판(댓글)구현하기</title>
+    <link rel="stylesheet" href="./public/css/common.css">
+    <link rel="stylesheet" href="./public/css/font.css">
+    <link rel="stylesheet" href="./public/css/list.css">
+</head>
+
+<body>
+    <div id="comments">
+        <h1>댓글 목록</h1>
+        <ul class="comments-list"></ul>
+        <form class="comment-form" action="./list.html" method="get">
+            <textarea name="userName" placeholder="유저 아이디 입력"></textarea>
+            <textarea name="title" placeholder="제목 입력"></textarea>
+            <textarea name="content" placeholder="글 내용 입력"></textarea>
+            <button type="submit">댓글 작성</button>
+        </form>
+    </div>
+    <script src="./public/js/read.js"></script>
+    <script src="./public/js/create.js"></script>
+    <script src="./public/js/delete.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+.header-nav {
+  align-content: center;
+  padding: 0 20px 0 20px;
+  box-sizing: border-box;
+  background: white;
+  border: solid 1px #eaeaea;
+}
+
+.header-nav > ul {
+  margin: 0 auto;
+  max-width: 1200px;
+  list-style: none;
+  height: 60px;
+  align-content: center;
+}
+
+.header-nav > ul > li {
+  display: inline-block;
+  width: 16%;
+  text-align: center;
+  color: #333333;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.header-nav > ul > .first-child,
+.header-nav > ul > li:nth-child(1) {
+  color: red;
+}

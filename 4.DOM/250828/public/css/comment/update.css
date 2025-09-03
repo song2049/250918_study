@@ -1,0 +1,44 @@
+#comments {
+  height: 100vh;
+}
+
+#comments > h1, 
+#comments > .inner {
+  margin: auto;
+}
+
+#comments > h1 {
+  padding: 20px 60px;
+}
+
+#comments > .inner {
+  margin: auto;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+  padding: 20px 0;
+}
+
+#comments > .inner > .comment-info {
+  gap:20px
+}
+
+.comment-info > .item-button {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+
+.comment-info > .comment-info-item > input {
+  margin: 10px 0 0 0;
+  font-size: 16px;
+}
+
+.comment-info input {
+  width: 100%;
+}
+
+.comment-info button {
+  align-self: flex-end;
+}

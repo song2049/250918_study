@@ -1,0 +1,79 @@
+#header{
+    margin: 0 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    min-width: 500px;
+}
+
+#header > h3{
+    width:100%;
+    padding-top : 20px;
+}
+
+/* 댓글 내용 form */
+#header > .formBoard{
+    width:100%;
+}
+
+#header > .formBoard > .grpInputRow {
+    margin : 3px;
+    display: flex; 
+    gap: 3px;
+    width:100%;
+}
+
+.formBoard > .grpInputRow > .lblHeader {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width : 150px;
+    color : white;
+    font-weight: 500;
+    background-color: rgb(152, 152, 152);
+}
+
+.formBoard > .grpInputRow > .inputField {
+    display: inline-block;
+    height: 25px;
+    width : 100%;
+}
+
+.formBoard > .grpInputRow > .inputTxtArea {
+    height: 150px;
+    width : 100%;
+}
+
+#header > .formBoard > .btnArea{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    margin-top: 30px;
+    gap: 10px;
+    
+    
+}
+
+.formBoard > .btnArea > .btnCancel{
+    width: 100px;
+    height: 30px;
+    border: 0;
+    background-color: #400000;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+}
+
+.formBoard > .btnArea > .btnSave{
+    width: 100px;
+    height: 30px;
+    border: 0;
+    background-color: #110158;
+    font-weight: 500;
+    color: white;
+    margin-right: 10px;
+    cursor: pointer;
+}
+

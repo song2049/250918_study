@@ -1,0 +1,37 @@
+
+.header-top {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-top > .header-top-tel {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.header-top > .header-top-tel > span {
+  font-size: 13px;
+  color: #666666;
+  font-weight: 600;
+}
+
+.header-top > .header-top-tel > span + a {
+  font-size: 26px;
+  line-height: 31px;
+  color: #6842ff;
+  font-weight: 900;
+}
+
+.header-top > a > .logo {
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+}

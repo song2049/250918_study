@@ -1,0 +1,46 @@
+#banner {
+    padding: 100px 0 100px 0;
+    background-color: #3858fb;
+}
+#banner > .banner-inner {
+    position: relative;
+    /* 최대 넓이는 이정도야! */
+    max-width: 1200px; 
+    margin: 0 auto 0 auto;
+    color: white;
+}
+
+/* 배너 왼쪽 */
+#banner > .banner-inner > .left > h4 {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+}
+#banner > .banner-inner > .left > h3 {
+    padding-top: 16px;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 62px;
+}
+
+/* 배너 오른쪽 */
+#banner > .banner-inner > .right {
+    position: absolute;
+    top: -45px;
+    right: 0px;
+    width: 424px;
+    height: 380px;
+    background: url('../img/banner-right.png') no-repeat center / contain;
+    
+    /* 
+        background-repeat: no-repeat;
+        남는 공간이 있어도 반복하지 않겠다.
+
+        배경 이미지를 가로-세로 모두 가운데 정렬하겠다.
+        background-position: center;
+
+        이미지를 요소 크기 안에 비율 유지하면서 다 들어가게 만든다.
+        background-size: contain;
+    */
+}
+

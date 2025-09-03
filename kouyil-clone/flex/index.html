@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex 배치방향</title>
+    <link rel="stylesheet" href="./public/css/flex.css" />
+  </head>
+  <body>
+    <h1>Flex</h1>
+    <div class="line"></div>
+    <h3>flex-direction</h3>
+    아이템들이 배치되는 축의 방향을 결정하는 속성입니다. <br />즉 가로로 할거냐
+    세로로 할거냐”를 정해주는 거예요.
+    <div class="container">
+      <div class="flex-container">
+        <div class="flex-item">111111</div>
+        <div class="flex-item">2222222222222</div>
+        <div class="flex-item">33333</div>
+      </div>
+    </div>
+    <div class="flex-container-controls">
+      <div>
+        <input
+          type="radio"
+          name="flex-direction"
+          value="row"
+          checked="checked"
+          id="flex-direction-row"
+        /><label for="flex-direction-row">row</label>
+      </div>
+      <div>
+        <input
+          type="radio"
+          name="flex-direction"
+          value="row-reverse"
+          id="flex-direction-row-reverse"
+        /><label for="flex-direction-row-reverse">row-reverse</label>
+      </div>
+      <div>
+        <input
+          type="radio"
+          name="flex-direction"
+          value="column"
+          id="flex-direction-column"
+        /><label for="flex-direction-column">column</label>
+      </div>
+      <div>
+        <input
+          type="radio"
+          name="flex-direction"
+          value="column-reverse"
+          id="flex-direction-column-reverse"
+        /><label for="flex-direction-column-reverse">column-reverse</label>
+      </div>
+    </div>
+    <div class="descriptions">
+      <h3 id="descriptions-row" style="display: block">
+        아이템들이 행(가로) 방향으로 배치됩니다.
+      </h3>
+      <h3 id="descriptions-row-reverse">
+        아이템들이 역순으로 가로 배치됩니다.
+      </h3>
+      <h3 id="descriptions-column">아이템들이 열(세로) 방향으로 배치됩니다.</h3>
+      <h3 id="descriptions-column-reverse">
+        아이템들이 역순으로 세로 배치 됩니다.
+      </h3>
+    </div>
+    <div class="css-display">
+      .flex-container { <br />
+      &nbsp;&nbsp;width: 50%;<br />
+      &nbsp;&nbsp;display: flex;<br />
+      &nbsp;&nbsp;flex-direction:
+      <span id="flex-direction-value">row</span>;<br />
+      &nbsp;&nbsp;gap: 10px;<br />
+      &nbsp;&nbsp;background-color: gray;<br />
+      }
+    </div>
+    <script>
+      const radios = document.querySelectorAll('input[name="flex-direction"]');
+      const flexContainer = document.querySelector('.flex-container');
+      const descriptions = document.querySelectorAll('.descriptions > h3');
+      const flexDirectionValue = document.getElementById(
+        'flex-direction-value'
+      );
+
+      radios.forEach((radio) => {
+        radio.addEventListener('change', (event) => {
+          flexContainer.style.flexDirection = event.target.value;
+          flexDirectionValue.textContent = event.target.value;
+          // 모든 설명 숨기기
+          descriptions.forEach((description) => {
+            description.style.display = 'none';
+          });
+
+          // 선택된 값에 해당하는 설명만 표시하기
+          const selectedDescription = document.getElementById(
+            `descriptions-${event.target.value}`
+          );
+          if (selectedDescription) selectedDescription.style.display = 'block';
+        });
+      });
+    </script>
+  </body>
+</html>

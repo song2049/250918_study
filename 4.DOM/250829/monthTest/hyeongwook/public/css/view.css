@@ -1,0 +1,150 @@
+#header{
+    margin: 0 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    min-width: 500px;
+}
+
+#header > h1{
+    padding: 20px;
+}
+
+#header > h3{
+    width:100%;
+    padding-top : 20px;
+}
+
+/* 게시물 내용 form */
+#header > .formBoard{
+    width:100%; 
+}
+#header > .formBoard > .grpInputRow {
+    margin : 3px;
+    display: flex; 
+    gap: 3px;
+    width:100%;
+}
+
+.formBoard > .grpInputRow > .lblHeader {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width : 150px;
+    color : white;
+    font-weight: 500;
+    background-color: #313131;
+}
+
+.formBoard > .grpInputRow > .inputField {
+    display: inline-block;
+    height: 25px;
+    width : 100%;
+}
+
+.formBoard > .grpInputRow > .inputTxtArea {
+    height: 150px;
+    width : 100%;
+}
+
+hr {
+    margin: 20px;
+}
+/* 댓글 현황 form */
+#header > .formReply{
+    width: 100%;
+    padding: 5px;
+    margin-top: 3px;
+    
+    border-radius: 5px;
+    background-color: #ebebeb;
+}
+
+#header > .formReply > .replyCard {
+    margin: 10px;
+}
+.formReply > .replyCard > .replyCard-Input:nth-child(1) {
+    /* 아이디 입력 */
+    width: 20%;
+}
+.formReply > .replyCard > .replyCard-Input:nth-child(2) {
+    /* 제목 입력 */
+    width: 76%;
+}
+.formReply > .replyCard > .replyCard-TxtArea {
+    /* display: inline; */
+    width:97%;
+    height: 50px;
+    margin-top: 5px;
+}
+
+#header > .formReply > .btnArea{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+.formReply > .btnArea > .btnUpdate{
+    width: 100px;
+    height: 30px;
+    border: 0;
+    background-color: #400000;
+    font-weight: 500;
+    color: white;
+}
+
+.formReply > .btnArea > .btnSave{
+    width: 100px;
+    height: 30px;
+    border: 0;
+    background-color: #110158;
+    font-weight: 500;
+    color: white;
+    margin-right: 10px;
+    cursor: pointer; 
+    /* 버튼인데 왜 마우스 오버 커서가 기본으로 적용이 안됐지?... */
+}
+
+.replyCard > p {
+    display: flex;
+    text-align: center;
+    gap: 10px;
+    background-color: #f6f6f6;
+}
+
+.replyCard > p > label{
+    display: flex;
+    justify-content: center;
+    width: 110px;
+    background-color: rgb(152, 152, 152);
+    color:white;
+    font-weight: 500;
+}
+
+.replyCard > p > span{
+    /* width: 60%; */
+    text-align: left;
+    
+}
+
+.replyCard > p > a{
+    display: inline-block;
+    /* margin-left: 200px; */
+    text-align: right;
+    width: 80px;
+    font-size: 14px;
+    
+}
+
+.replyCard > p > textarea{
+    resize: none;
+    background: transparent;
+    border: 0;
+    width: 70%;
+    height : 80px;
+}
+
+
+

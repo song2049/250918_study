@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>댓글 상세 및 수정페이지</title>
+    <link rel="stylesheet" href="./public/css/view.css">
+</head>
+
+<body>
+    <a href="./list.html">뒤로 돌아가기</a>
+    <div id="comment">
+        <h1>댓글 상세 및 수정 페이지</h1>
+        <form action="./list.html" class="comment-info" method="get">
+            <div class="form-group">
+                <p class="title-text">작성자</p>
+                <textarea name="userName">유저 아이디</textarea>
+            </div>
+            <div class="form-group">
+                <p class="title-text">제목</p>
+                <textarea name="title">제목</textarea>
+            </div>
+            <div class="form-group">
+                <p class="title-text">글 내용</p>
+                <textarea name="content">글 내용</textarea>
+            </div>
+            <div class="form-group">
+                <p class="title-text">작성일</p>
+                <textarea name="createdAt">작성일</textarea>
+            </div>
+            <button type="submit">수정 완료</button>
+        </form>
+    </div>
+    <script src="./public/js/view.js"></script>
+    <script src="./public/js/update.js"></script>
+</body>
+
+</html>

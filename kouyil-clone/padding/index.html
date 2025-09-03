@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS - 패딩</title>
+    <link rel="stylesheet" href="./public/css/padding.css" />
+  </head>
+  <body>
+    <h1>padding</h1>
+    <div class="line"></div>
+    <h2>안쪽으로 밀어내는 성질 => 기준(#padding-container)</h2>
+    <h3>#padding-container</h3>
+    <div id="padding-container">
+      <div class="padding-top">
+        #padding-container가 .padding-item을
+        <span class="padding-value">20px</span>만큼 패딩으로 밀어냄
+      </div>
+      <div class="padding-left">패딩으로 밀어냄</div>
+      <div class="padding-right">패딩으로 밀어냄</div>
+      <div class="padding-bottom">
+        #padding-container가 .padding-item을
+        <span class="padding-value">20px</span>만큼 패딩으로 밀어냄
+      </div>
+      <div class="padding-item"><h3>.padding-item</h3></div>
+    </div>
+    <div class="padding-controls">
+      <div>
+        <input
+          type="radio"
+          name="padding"
+          value="20"
+          id="padding-ten"
+          checked="checked"
+        /><label for="padding-ten">padding : 20px</label>
+      </div>
+      <div>
+        <input
+          type="radio"
+          name="padding"
+          value="100"
+          id="padding-hundrad"
+        /><label for="padding-hundrad">padding : 100px</label>
+      </div>
+      <div>
+        <input
+          type="radio"
+          name="padding"
+          value="200"
+          id="padding-two-hundrad"
+        /><label for="padding-two-hundrad">padding : 200px</label>
+      </div>
+    </div>
+    <div class="css-display">
+      #padding-container { <br />
+      &nbsp;&nbsp;padding:
+      <span class="padding-value">20px</span>;<br />
+      }
+    </div>
+    <script>
+      const paddingRadios = document.querySelectorAll('input[name="padding"]');
+      const paddingValueDisplay = document.querySelectorAll('.padding-value');
+      const paddingContainer = document.querySelector('#padding-container');
+
+      paddingRadios.forEach((radio) => {
+        radio.addEventListener('change', (event) => {
+          const paddingValue = event.target.value + 'px';
+          paddingValueDisplay.forEach((value) => {
+            value.textContent = paddingValue;
+          });
+          paddingContainer.style.padding = paddingValue;
+        });
+      });
+    </script>
+  </body>
+</html>

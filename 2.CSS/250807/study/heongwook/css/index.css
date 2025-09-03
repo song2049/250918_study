@@ -1,0 +1,38 @@
+#header {
+    /* 헤더를 중앙 정렬 */
+    display: flex;
+    justify-content: center;
+
+    /* 보더를 보여주기 위하여 마진을 살짝 부여 */
+    /* 실제 사이트에서는 마진없이 로고 아래쪽으로 자연스럽게 보일 것 */
+    margin-top: 2px;
+    border: 1px solid rgb(214, 214, 214);
+}
+
+.header-top {
+    /* 브라우저 크기 변동에 대응하기 위해 크기에 %방식 적용 */
+    width: 60%;
+}
+
+.header-top-nav {
+    font-size: 16px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+}
+
+.header-top-nav > li > a {
+    /* color: black; */
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.nav-item {
+    color: #515151;
+}
+
+a:active {
+    color: red;
+}

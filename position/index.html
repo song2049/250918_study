@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./public/css/position.css" />
+  </head>
+  <body>
+    <h1>position</h1>
+    <div class="line"></div>
+    <h3>요소 배치</h3>
+    <div class="box-controls">
+      <div>
+        <input
+          type="radio"
+          name="containerTopValue"
+          value="300"
+          id="position-container-threehundrad"
+          checked="checked"
+        />
+        <label for="position-container-threehundrad">300px</label>
+      </div>
+      <div>
+        <input
+          type="radio"
+          name="containerTopValue"
+          value="1000"
+          id="position-container-thousand"
+        />
+        <label for="position-container-thousand">1000px</label>
+      </div>
+    </div>
+    <div class="container">
+      <div class="box-relative">sticky 박스</div>
+      <div class="box-absolute">fixed 박스</div>
+    </div>
+    <div class="box-controls">
+      <div>
+        <input
+          type="radio"
+          name="blue"
+          value="relative"
+          id="position-blue-relative"
+          checked="checked"
+        />
+        <label for="position-blue-relative">position: relative</label>
+      </div>
+      <div>
+        <input
+          type="radio"
+          name="blue"
+          value="absolute"
+          id="position-blue-absolute"
+        />
+        <label for="position-blue-absolute">position: absolute</label>
+      </div>
+      <div>
+        <input
+          type="radio"
+          name="blue"
+          value="fixed"
+          id="position-blue-fixed"
+        />
+        <label for="position-blue-fixed">position: fixed</label>
+      </div>
+      <div>
+        <input
+          type="radio"
+          name="blue"
+          value="sticky"
+          id="position-blue-sticky"
+        />
+        <label for="position-blue-sticky">position: sticky</label>
+      </div>
+    </div>
+    <div class="box-controls">
+      <div>
+        <input
+          type="radio"
+          name="blueTopValue"
+          value="10"
+          id="position-blue-ten"
+          checked="checked"
+        />
+        <label for="position-blue-ten">10px</label>
+      </div>
+      <div>
+        <input
+          type="radio"
+          name="blueTopValue"
+          value="100"
+          id="position-blue-hundred"
+        />
+        <label for="position-blue-hundred">100px</label>
+      </div>
+      <div>
+        <input
+          type="radio"
+          name="blueTopValue"
+          value="1000"
+          id="position-blue-thousand"
+        />
+        <label for="position-blue-thousand">1000px</label>
+      </div>
+    </div>
+
+    <div class="css-display">
+      .box-relative {<br />
+      &nbsp;&nbsp;position:
+      <span id="position-blue-code-value">relative</span>;<br />
+      &nbsp;&nbsp;width: 100px;<br />
+      &nbsp;&nbsp;height: 100px;<br />
+      &nbsp;&nbsp;background-color: #64b5f6;;<br />
+      &nbsp;&nbsp;top:
+      <span id="position-blue-top-value">30</span>px;<br />
+      &nbsp;&nbsp;left: 0px;<br />
+      }
+    </div>
+    <div class="box-controls">
+      <div>
+        <input
+          type="radio"
+          name="orange"
+          value="relative"
+          id="position-orange-relative"
+        />
+        <label for="position-orange-relative">position: relative</label>
+      </div>
+      <div>
+        <input
+          type="radio"
+          name="orange"
+          value="absolute"
+          checked="checked"
+          id="position-orange-absolute"
+        />
+        <label for="position-orange-absolute">position: absolute</label>
+      </div>
+      <div>
+        <input
+          type="radio"
+          name="orange"
+          value="fixed"
+          id="position-orange-fixed"
+        />
+        <label for="position-orange-fixed">position: fixed</label>
+      </div>
+      <div>
+        <input
+          type="radio"
+          name="orange"
+          value="sticky"
+          id="position-orange-sticky"
+        />
+        <label for="position-orange-sticky">position: sticky</label>
+      </div>
+    </div>
+    <div class="box-controls">
+      <div>
+        <input
+          type="radio"
+          name="orangeTopValue"
+          value="10"
+          id="position-orange-ten"
+          checked="checked"
+        />
+        <label for="position-orange-ten">10px</label>
+      </div>
+      <div>
+        <input
+          type="radio"
+          name="orangeTopValue"
+          value="100"
+          id="position-orange-hundred"
+        />
+        <label for="position-orange-hundred">100px</label>
+      </div>
+      <div>
+        <input
+          type="radio"
+          name="orangeTopValue"
+          value="1000"
+          id="position-orange-thousand"
+        />
+        <label for="position-orange-thousand">1000px</label>
+      </div>
+    </div>
+    <div class="css-display">
+      .box-absolute {<br />
+      &nbsp;&nbsp;position:
+      <span id="position-orange-code-value">absolute</span>;<br />
+      &nbsp;&nbsp;width: 100px;<br />
+      &nbsp;&nbsp;height: 100px;<br />
+      &nbsp;&nbsp;background-color: #ff8a65;<br />
+      &nbsp;&nbsp;top:
+      <span id="position-orange-top-value">30</span>px;<br />
+      &nbsp;&nbsp;left: 50px;<br />
+      }
+    </div>
+    <script>
+      const containerRadios = document.querySelectorAll(
+        'input[name="containerTopValue"]'
+      );
+      const container = document.querySelector('.container');
+
+      containerRadios.forEach((radio) => {
+        radio.addEventListener('change', (event) => {
+          container.style.height = event.target.value + 'px';
+        });
+      });
+    </script>
+    <script>
+      const blueRadios = document.querySelectorAll('input[name="blue"]');
+      const orangeRadios = document.querySelectorAll('input[name="orange"]');
+      const boxBlue = document.querySelector('.box-relative');
+      const boxOrange = document.querySelector('.box-absolute');
+      const positionBlueCodeValue = document.querySelector(
+        '#position-blue-code-value'
+      );
+      const positionOrangeCodeValue = document.querySelector(
+        '#position-orange-code-value'
+      );
+      const blueTopValueRadios = document.querySelectorAll(
+        'input[name="blueTopValue"]'
+      );
+      const orangeTopValueRadios = document.querySelectorAll(
+        'input[name="orangeTopValue"]'
+      );
+      const positionBlueTopValue = document.querySelector(
+        '#position-blue-top-value'
+      );
+      const positionOrangeTopValue = document.querySelector(
+        '#position-orange-top-value'
+      );
+      blueRadios.forEach((radio) => {
+        radio.addEventListener('change', (event) => {
+          boxBlue.style.position = event.target.value;
+          positionBlueCodeValue.textContent = event.target.value;
+        });
+      });
+      blueTopValueRadios.forEach((radio) => {
+        radio.addEventListener('change', (event) => {
+          boxBlue.style.top = event.target.value + 'px';
+          positionBlueTopValue.textContent = event.target.value;
+        });
+      });
+      orangeRadios.forEach((radio) => {
+        radio.addEventListener('change', (event) => {
+          boxOrange.style.position = event.target.value;
+          positionOrangeCodeValue.textContent = event.target.value;
+        });
+      });
+      orangeTopValueRadios.forEach((radio) => {
+        radio.addEventListener('change', (event) => {
+          boxOrange.style.top = event.target.value + 'px';
+          positionOrangeTopValue.textContent = event.target.value;
+        });
+      });
+    </script>
+  </body>
+</html>

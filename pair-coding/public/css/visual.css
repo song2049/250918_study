@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#main {
+  height: 260px;
+}
+#visual {
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: #3858fb;
+}
+
+#visual > .inner {
+  width: 100%;
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#visual > .inner > .left {
+  color: white;
+}
+
+#visual > .inner > .left > h4 {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
+}
+
+#visual > .inner > .left > h3 {
+  padding-top: 16px;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 62px;
+}
+
+#visual > .inner > .right {
+  position: absolute;
+  top: -45px;
+  right: 0;
+  width: 424px;
+  height: 380px;
+  background: url('../img/visual-right.png') no-repeat center / contain;
+}
+#content {
+  width: 100%;
+  background: #edf1f9;
+}

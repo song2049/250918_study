@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>데스노트 댓글 목록</title>
+    <link rel="stylesheet" href="./public/css/font.css">
+    <link rel="stylesheet" href="./public/css/common.css">
+    <link rel="stylesheet" href="./public/css/list.css">
+</head>
+<body>
+    <img src="./public/img/다운로드.jpg" class="logo">
+    <h1>댓글 게시판</h1>
+    <form class="comment-form">
+        <input name="userName" placeholder="아이디">
+        <input name="title" placeholder="제목">
+        <textarea name="content" placeholder="내용"></textarea>
+        <button type="submit">작성</button>
+    </form>
+
+    <ul class="comments-list"></ul>
+
+    <script src="./public/js/read.js"></script>
+    <script src="./public/js/create.js"></script>
+    <script src="./public/js/delete.js"></script>
+</body>
+</html>

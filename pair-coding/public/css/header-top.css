@@ -1,0 +1,68 @@
+/* 
+  flex container란?
+  정렬 속성
+  정렬 속성 값
+  부모의 자식 요소간 간격 주기
+  row와 column
+  형제 선택자 +
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header-top {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.header-top > .tel {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.header-top > .tel > span {
+  font-size: 13px;
+  color: #666666;
+  font-weight: 600;
+}
+
+.header-top > .tel > span + a {
+  text-decoration: none;
+  font-size: 26px;
+  line-height: 31px;
+  color: #6842ff;
+  font-weight: 900;
+}
+
+.logo {
+  display: inline;
+}
+
+/* 
+  Q. > 선택자 사용안하고 이름을 부여하면 되는데 왜 안해요?
+
+  최소한의 이름 부여가 목적입니다.
+  물론 편하긴 하겠지만, 나중에 프로젝트를 할 때는 코드를 합칠겁니다.
+
+  이 사람 이부분 저 사람 저부분
+
+  합치는 경우에 이름이 겹칠 수 있어요.
+  그래서 최소한 부모 엘리먼트는 내가 알아볼 수 있는 class이름으로 짓되
+  자식 엘리먼트 후손 엘리먼트들에게는 이름을 부여하는 것은 최소화 해야합니다.
+
+  경일 게임 아카데미를 한 번 볼까요?
+
+  여기도 직계 자손한테까지만 이름을 부여하고 있어요.
+
+  나름대로의 규칙을 가지고 최소한의 이름을 부여해야만 협업에 큰 무리가 없어요.
+*/

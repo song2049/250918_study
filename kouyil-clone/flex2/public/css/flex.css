@@ -1,0 +1,57 @@
+/* Flex(플렉스)는 Flexible Box, Flexbox라고 부르기도 합니다. */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.line {
+  margin: 20px 0;
+  width: 100%;
+  border: 0.8px solid lightgray;
+}
+
+body > h3 {
+  margin-bottom: 20px;
+}
+
+/* 기본 Flex 스타일 */
+.flex-container {
+  display: flex;
+  justify-content: flex-start; /* 기본값 설정 */
+  background-color: gray;
+}
+.flex-item {
+  width: 50px;
+  height: 50px;
+  background-color: dodgerblue;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  margin: 5px;
+}
+
+.flex-container-controls {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.flex-container-controls > div {
+  display: flex;
+  gap: 4px;
+}
+.css-display {
+  margin-top: 20px;
+  font-family: monospace;
+  background-color: #f3f3f3;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.descriptions {
+  margin-top: 20px;
+}
+
+.descriptions > h5 {
+  display: none;
+}

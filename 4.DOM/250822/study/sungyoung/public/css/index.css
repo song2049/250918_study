@@ -1,0 +1,28 @@
+#gugudan {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    padding: 30px 0;
+}
+
+#gugudan > ul {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+#gugudan > ul > li {
+    border-radius: 20px;
+    width: 150px;
+    height: 300px;
+    background-color: #0e235c;
+    border: 2px dashed #ffd700;
+    list-style: none;
+    margin: 0 40px;
+}
+#gugudan > ul > li > p {
+    color: aliceblue;
+    margin: 13px 0;
+    display: flex;
+    justify-content: center;
+}

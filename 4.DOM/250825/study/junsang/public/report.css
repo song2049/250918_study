@@ -1,0 +1,14 @@
+#gugudan>.gugudan_item {
+    display: inline-block;
+    width: 6%;
+    background-color: rgb(243, 243, 243);
+    border-radius: 10px;
+    margin: 1%;
+    padding: 1%;
+}
+
+#gugudan>h1 {
+    color: red;
+    width: 50%;
+    text-align: center;
+}

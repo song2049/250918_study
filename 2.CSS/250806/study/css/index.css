@@ -1,0 +1,18 @@
+.footer > span {
+    color : red
+}
+.first-child + li + li::marker {
+    color : black
+}
+.first-child + li + li {
+    color : aqua
+}
+input[type="email"] {
+    border : 1px solid red
+}
+.first-child + li + li + li + li::marker{
+    color : black
+}
+.first-child + li + li + li + li{
+    color : aqua
+}

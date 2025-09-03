@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>월별 평가 - 댓글</title>
+    <link rel="stylesheet" href="./public/css/reset.css">
+    <link rel="stylesheet" href="./public/css/list.css">
+</head>
+
+<body>
+    <div id="comments-box">
+        <h1>댓글 목록</h1>
+        <ul class="comment-list"></ul>
+        <form class="list-box" action="https://google.com" method="get">
+            <input type="text" name="humanID" placeholder="ID">
+            <input type="text" name="title" placeholder="제목">
+            <textarea name="detail" placeholder="내용을 입력해주세요"></textarea>
+            <button type="submit">작성</button>
+        </form>
+    </div>
+    <script src="./public/js/render.js"></script>
+    <script src="./public/js/create.js"></script>
+    <script src="./public/js/delete.js"></script>
+</body>
+
+</html>

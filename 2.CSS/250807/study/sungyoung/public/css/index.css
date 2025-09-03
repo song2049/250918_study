@@ -1,0 +1,25 @@
+.header-topline {
+    margin: 3px 0 0 0;
+    background-color:rgba(128, 128, 128, 0.329);
+    height: 1px;
+}
+
+.text-effect {
+    color: red;
+}
+
+.main {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration-line: none;
+    color: black;
+}

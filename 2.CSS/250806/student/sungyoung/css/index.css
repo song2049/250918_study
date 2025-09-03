@@ -1,0 +1,31 @@
+span {
+    color: red;
+}
+
+.body > #body-item + input[type="email"] {
+    border: 1px solid red;
+}
+
+.body > #body-item + input[type="email"]:focus {
+    outline: red;
+}
+
+.first-child::marker {
+    color: black;
+}
+
+.first-child + li::marker {
+    color: aqua;
+}
+
+.first-child + li + li::marker {
+    color: black;
+}
+
+.first-child + li + li + li::marker {
+    color: aqua;
+}
+
+.first-child + li + li + li + li::marker {
+    color: black;
+}

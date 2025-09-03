@@ -1,0 +1,45 @@
+/* 1. 선택자 너무 어려워요 빨간색으로 만들기 */
+div+span {
+    color: red;
+}
+
+/* 2. input 타입이 email인 경우를 선택하여 border 색 변경 */
+input[type="email"] {
+    border: 1px solid red;
+    /*
+    border(테두리)의 종류 
+    solid	실선
+    dotted	짧은 점선
+    dashed	긴 점선
+    double	두줄 실선
+    outset	안쪽 어둡게
+    inset	outset 반대
+    groove	파인선
+    ridge	불룩한 선 
+    */
+}
+
+/* 
+3. 나를 칠해보세요의 색을 아쿠아 색으로 변경. 
+그 외에 li 요소의 색깔은 변경시키지 마세요! 
+*/
+
+/* 직계자식 선택자 없이 접근 */
+.footer ul li:nth-of-type(3),
+.footer ul li:nth-of-type(5) {
+    color: aqua;
+}
+
+.footer+span {
+    color: red;
+}
+
+/* 4. li 의 bullet 색을 초기값으로 변경 */
+/* li 태그 내 텍스트가 span 태그로 감싸져 있다면 마커 수정없이 가능했을 것 */
+
+/* 마커 컬러를 변경하기 보다는 복원했다..라고 본다면...? */
+/* 초기값 설정 또한 색깔변경 이라면 오답... */
+
+li::marker {
+    color: initial;
+}

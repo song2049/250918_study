@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - HTML 구조를 잘 알고, 요소를 정확히 선택할 줄 알아야</title>
+    <link rel="stylesheet" href="./public/css/index.css"/>
+</head>
+<body>
+    <h2>브라우저마다 폰트가 달라보일까?</h2>
+
+    <div class="number-group">
+        <span class="number-group-one">1</span>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <span class="two">
+        <span class="number-group-one">1</span>
+        <span>1</span>
+    </span>
+    <span>3</span>
+    <div>4</div>
+    <span>5</span>
+</body>
+</html>
+        <!-- <div class="header">
+            <p class="header-title">
+                CSS 수업 재밌어요
+            </p>
+        </div>
+
+        <div class="main">
+            <p class="main-writer">주병현</p>
+            <p class="main-content">내용입니다.</p>
+        </div>  -->
+
+    <!-- CSS를 작성하는 세 가지 방법 -->
+    <!-- 
+        1. 상단에 style태그 활용 (HTML 내부)
+        2. 인라인 스타일 작성
+        3. 외부 CSS 파일 작성 후 연결
+    -->
+    <!-- HTML 문서와 외부파일을 연결해주는 태그 -->
+
+    <!-- 
+        경로: 지금 위치에서, 내가 불러오고 싶은 파일까지의 "길"
+
+        상대 경로: 현재 파일을 기준으로 위치를 계산
+        절대 경로: 루트(root)부터 전체 경로 지정
+
+        위의 `.`은 현재 폴더를 뜻합니다.`
+    -->

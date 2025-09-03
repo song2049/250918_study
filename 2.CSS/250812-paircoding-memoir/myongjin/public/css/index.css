@@ -1,0 +1,165 @@
+.search-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #e8e8e8;
+    border-radius: 45px;
+    width: 500px;
+    height: 50px;
+    left: 700px;
+    margin: 40px 0;
+}
+.search-wrapper > input {
+    position: absolute;
+    border-radius: 45px;
+    outline: none;
+    border-width: 0px;
+    margin: 0 20px 0 0;
+    right: 58%;
+    top: 17px;
+  
+}
+.search-wrapper > ::placeholder {
+    font-size: 17px;
+    position: absolute;
+    left: 5px;
+    top: -3px;
+    
+}
+
+.search-wrapper > label::before {
+    content: '';
+    border: 3px solid black;
+    border-radius: 50px;
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    width: 15px;
+    height: 15px;    
+}
+
+.search-wrapper > label::after {
+    content: '';
+    border: 2px solid black;
+    position:absolute;
+    width: 10px;
+    height: 0px;
+    right: 21px;
+    top: 30px; 
+    transform: rotate(44deg);
+}
+#section-top {
+    padding: 10px 350px 50px 350px;   
+}
+#section-one {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    height: 30px;
+    position: relative;
+    padding: 25px;
+    margin-top: 10px;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+}
+
+#section-one > li{
+    top: 30px;
+    display: inline-block;
+    position: absolute;
+    font-size: 18px;
+}
+
+.company{
+    color: #6842ff;
+    position: absolute;
+    left: 30px;
+    font-weight: 600;
+}
+
+.main {
+    position: absolute;
+    left: 300px;
+}
+
+.date {
+    color: gray;
+    position: absolute;
+    right: 150px;
+}
+
+.day {
+    position: absolute;
+    right: 30px;
+}
+
+footer {
+    background-color: #41455c;
+    color: white;
+    padding: 50px;
+}
+
+.inner {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 0 16.5%;
+    position: relative;
+}
+
+.inner > .footer-top {
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+    font-weight: bold;
+}
+
+.info {
+    display: flex;
+    justify-content: flex-start;   
+    line-height: 40px;
+}
+
+.footer-main > .info > .tag {
+    font-weight: bold;
+
+}
+
+.tag-detail {
+    position: absolute;
+    left: 200px;    
+}
+
+.name {
+    line-height: 30px;
+    font-weight: bold;
+    border-bottom: 1px solid gray;
+    height: 130px 
+}
+
+
+#footer-line > a {
+
+    height: 30px;
+    display: flex;
+    justify-content: space-between;   
+}
+.sns > a {
+    color: white;
+    font-weight: bold; 
+    text-decoration: none;
+}
+
+#footer-line {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.down {
+    color: gray;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}

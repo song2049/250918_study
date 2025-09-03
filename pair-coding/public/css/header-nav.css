@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.header-nav {
+  width: 100%;
+  align-content: center;
+  /* margin-top: 20px; */
+  padding-right: 20px;
+  padding-left: 20px;
+  box-sizing: border-box;
+  background: white;
+  border: solid 1px #eaeaea;
+  border-right: none;
+  border-left: none;
+}
+
+.header-nav > ul {
+  width: 100%;
+  /* 수평 정렬에 왜 마진이 사용되는가 */
+  margin: 0 auto;
+  max-width: 1200px;
+  list-style: none;
+  height: 60px;
+  align-content: center;
+}
+
+.header-nav > ul > .first-child {
+  color: red;
+}
+
+.header-nav > ul > li {
+  display: inline-block;
+  width: 16%;
+  text-align: center;
+  color: #333333;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* 
+  box-sizing: border-box; 질문 들어올 수 있음.
+*/

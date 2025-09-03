@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#footer {
+  width: 100%;
+  padding: 56px 0;
+  color: white;
+  background: #40405d;
+}
+
+#footer > .inner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+
+#footer > .inner > ul:nth-child(1) {
+  list-style: none;
+  display: flex;
+  gap: 45px;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+#footer > .inner > ul:nth-child(2) {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+#footer > .inner > ul:nth-child(2) > li {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+#footer > .inner > ul:nth-child(2) > li > h3 {
+  width: 100%;
+  max-width: 150px;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+#footer > .inner > ul:nth-child(2) > li > p {
+  width: 100%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+#footer > .inner > ul:nth-child(3) {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 27px;
+  width: 490px;
+}
+
+#footer > .inner > ul:nth-child(3) > li {
+  list-style: none;
+  display: flex;
+  position: relative;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+#footer > .inner > ul:nth-child(3) > li:nth-of-type(1)::after {
+  content: '';
+  position: absolute;
+  top: 7px;
+  right: -13px;
+  display: block;
+  width: 1px;
+  height: 14px;
+  background: #dddddd;
+}
+#footer > .inner > ul:nth-child(3) > li:nth-of-type(3)::after {
+  content: '';
+  position: absolute;
+  top: 7px;
+  right: -13px;
+  display: block;
+  width: 1px;
+  height: 14px;
+  background: #dddddd;
+}
+
+#footer > .inner > div {
+  display: flex;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 40px;
+  justify-content: space-between;
+}
+
+#footer > .inner > div > div {
+  display: flex;
+  gap: 10px;
+}
+#footer > .inner > div > div > a {
+  color: white;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration: none;
+}
+
+#footer > .inner > div > div > a:nth-of-type(2)::before {
+  content: '·';
+  margin-right: 10px;
+}
+
+#footer > .inner > div > div > a:nth-of-type(3)::before {
+  content: '·';
+  margin-right: 10px;
+}
+
+#footer > .inner > div > div > a:nth-of-type(4)::before {
+  content: '·';
+  margin-right: 10px;
+}
+
+#footer > .inner > div > p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  opacity: 0.3;
+}

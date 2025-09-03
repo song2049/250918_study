@@ -1,0 +1,23 @@
+#body-item + input {
+    border: 1px solid red;
+}
+
+.first-child + li + li::marker {
+    color: black
+}
+
+.first-child + li + li {
+    color: aqua;
+}
+
+.first-child + li + li + li + li::marker {
+    color: black;
+}
+
+.first-child + li + li + li + li {
+    color: aqua;
+}
+
+.footer-item + div + span {
+    color: red;
+}

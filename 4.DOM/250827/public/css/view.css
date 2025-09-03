@@ -1,0 +1,23 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#comment {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 100vh;
+}
+
+#comment > .comment-info {
+    display: flex;
+    flex-direction: column;
+}
+
+#comment > .comment-info > button {
+    margin: 10px 0;
+}

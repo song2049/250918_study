@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#main {
+  height: 260px;
+}
+
+#content {
+  width: 100%;
+  /* height: 938px; */
+  padding: 108px 0 100px;
+  background: #edf1f9;
+}
+
+#content > .inner {
+  background: #edf1f9;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#content > .inner::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+#content > .inner > .left {
+  float: left;
+  margin-right: 10px;
+}
+
+#content > .inner > .left > .title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 36px;
+}
+#content > .inner > .left > .title > p {
+  font-size: 18px;
+  color: #333;
+  letter-spacing: -0.03em;
+}
+
+#content > .inner > .left > div {
+  margin-top: 35px;
+  width: 500px;
+}
+
+#content > .inner > .left > div > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#content > .inner > .left > div > ul {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  margin-top: 19px;
+  list-style: none;
+}
+
+#content > .inner > .left > div > ul > li {
+  width: 153px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #d1daeb;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #666666;
+  cursor: pointer;
+  transition: box-shadow 0.2s, color 0.2s;
+}
+
+#content > .inner > .left > div > ul > li:hover {
+  box-shadow: 0px 5px 30px rgba(209, 218, 235, 1);
+}
+
+#content > .inner > .left > .personalized > .button {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 384px;
+  height: 60px;
+  margin-top: 20px;
+}
+
+#content > .inner > .left > .personalized > input[type='button'] {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 384px;
+  height: 60px;
+  margin-top: 20px;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 18px;
+  color: #aaaaaa;
+  border: none;
+  cursor: pointer;
+  background: #ffffff url(../img/checkicon.png) no-repeat 90% 25px / 13px auto;
+  /* transition: box-shadow 0.3s ease; box-shadow 속도를 0.3초로 설정 */
+  transition: box-shadow 0.3s ease, color 0.3s ease;
+}
+
+#content > .inner > .left > .personalized > input[type='button']:hover {
+  box-shadow: 0px 5px 30px rgba(209, 218, 235, 1);
+  color: #c12ee9;
+  background: #ffffff url(../img/checkiconon.png) no-repeat 90% 25px / 13px auto;
+}
+
+#content > .inner > .right {
+  float: right;
+  background: gold;
+}

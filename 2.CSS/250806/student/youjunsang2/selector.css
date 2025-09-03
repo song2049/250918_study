@@ -1,0 +1,28 @@
+
+.footer > span {
+    color:red;
+}
+input {
+    border-color: red;
+}
+
+.first-child {
+    color:black;    
+}
+    
+.first-child + li {
+    color:black;    
+}
+
+.first-child + li + li {
+    color: aqua;
+}
+
+.first-child + li + li + li {
+    color:black;        
+}
+
+.first-child + li + li + li + li {
+    color:aqua;    
+    background-color: beige;
+}

@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  width: 100%;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  padding-right: 90px;
+}
+
+.main > div {
+  color: black;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.main > div > h2 {
+  font-weight: 700;
+  line-height: 57px;
+  font-size: 48px;
+}
+
+.main > div > ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.main > div > ul > li {
+  position: relative;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+}
+.main > div > ul > .circle {
+  display: block;
+  width: 22px;
+  height: 22px;
+  background: url(https://www.kiweb.or.kr/assets/front/img/mid_lnb_arrow.png)
+    no-repeat center / contain;
+}

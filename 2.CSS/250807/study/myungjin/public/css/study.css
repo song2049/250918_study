@@ -1,0 +1,17 @@
+#nav {
+    display: flex;
+    border-top: 1px solid gray;
+}
+
+.nav-main > span { 
+    display: inline;
+    justify-content: space-between;
+    padding: 100px;
+    font-weight: 600;
+}
+.info {
+    color: red;
+    font-weight: 700;
+    margin: 10px;
+    padding: 30px;
+}

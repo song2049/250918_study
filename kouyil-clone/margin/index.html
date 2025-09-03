@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS - 마진</title>
+    <link rel="stylesheet" href="./public/css/margin.css" />
+  </head>
+  <body>
+    <h1>margin</h1>
+    <div class="line"></div>
+    <h3>바깥으로 밀어내는 성질 => 기준(.margin-item)</h3>
+    <h5>#margin-container</h5>
+    <div id="margin-container">
+      <div class="margin-top">
+        .margin-item이 #margin-container를<span class="margin-value">20px</span
+        >만큼 마진으로 밀어냄
+      </div>
+      <div class="margin-bottom">
+        .margin-item이 #margin-container를<span class="margin-value">20px</span
+        >만큼 마진으로 밀어냄
+      </div>
+      <div class="margin-item"><h5>.margin-item</h5></div>
+    </div>
+    <div class="margin-controls">
+      <div>
+        <input
+          type="radio"
+          name="margin"
+          value="20"
+          id="margin-ten"
+          checked="checked"
+        /><label for="margin-ten">margin : 20px</label>
+      </div>
+      <div>
+        <input
+          type="radio"
+          name="margin"
+          value="100"
+          id="margin-hundrad"
+        /><label for="margin-hundrad">margin : 100px</label>
+      </div>
+      <div>
+        <input
+          type="radio"
+          name="margin"
+          value="200"
+          id="margin-two-hundrad"
+        /><label for="margin-two-hundrad">margin : 200px</label>
+      </div>
+    </div>
+    <div class="css-display">
+      #margin-item { <br />
+      &nbsp;&nbsp;margin:
+      <span class="margin-value">20px</span>;<br />
+      }
+    </div>
+    <script>
+      const marginRadios = document.querySelectorAll('input[name="margin"]');
+      const marginValueDisplay = document.querySelectorAll('.margin-value');
+      const marginItemContainer = document.querySelector('.margin-item');
+
+      marginRadios.forEach((radio) => {
+        radio.addEventListener('change', (event) => {
+          const marginValue = event.target.value + 'px';
+          marginValueDisplay.forEach((value) => {
+            value.textContent = marginValue;
+          });
+          marginItemContainer.style.margin = marginValue;
+        });
+      });
+    </script>
+  </body>
+</html>

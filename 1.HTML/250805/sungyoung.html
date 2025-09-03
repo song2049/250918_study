@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - 구조를 설계하는 능력</title>
+    <style>
+        #name {color: white;}
+        #section {color: white;}
+        #section2 {color: red;}
+        body {
+            background-image: url("https://i.ibb.co/tPbvb4wb/service-4482162-640.jpg");
+        }
+        span {
+           color: white; 
+        }
+        #name {
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<!-- 바디 영역 자체에 이미지를 넣지는 않아요 -->
+<body>
+    <h2>문의하기</h2>
+    <ui>
+        <li>
+            <label>
+            <span id="name">이름</span>
+            <input type="text"/>
+            </label>
+        </li>
+
+        <li>
+            <span>이메일</span>
+            <input type="email" id="email"/>
+        </li>
+        <li>
+            <span id="name">문의유형</span>
+            <label>
+                <input type="radio" name="Choice"value="Bug"/>
+                <span id="section">버그제보</span>
+            </label>
+
+            <label>
+                <input type="radio"
+                name="Choice"
+                value="Request"
+                />
+            <span id="section">기능요청</span>
+            </label>
+            <label>
+                <input 
+                    type="radio"
+                    name="Choice"
+                    value="Emergency"
+                />
+                <span id="section2">※긴급문의※</span>
+            </label>
+        </li>
+
+        <li>
+            <label>
+                <span id="name">뉴스레터 수신 동의</span>
+                <input type="checkbox">
+            </label>
+        </li>
+
+        <li>
+            <label>
+                <span id="name">메세지</span>
+                <input type="text"/>
+            </label>
+        </li>
+        <li>
+            <button>보내기</button>
+        </li>
+    </ui>
+
+    <h4> 고객센터의 운영시간</h4>
+    <div> 평일: 09:00 ~ 17:00 </div>
+    주말은 운영하지 않습니다.
+    <div id="name">© 2025 HTML 연습 페이지</div>
+</body>
+
+</html>

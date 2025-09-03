@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Justify Content Tester</title>
+    <link rel="stylesheet" href="./public/css/flex.css" />
+    <style></style>
+  </head>
+  <body>
+    <h1>Flex</h1>
+    <div class="line"></div>
+    <h3>justify-content(가로 정렬)</h3>
+    <div class="flex-container">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+    </div>
+    <div class="flex-container-controls">
+      <div>
+        <input
+          type="radio"
+          name="justify-content"
+          value="flex-start"
+          id="justify-content-flex-start"
+          checked="checked"
+        /><label for="justify-content-flex-start">flex-start</label>
+      </div>
+      <div>
+        <input
+          type="radio"
+          name="justify-content"
+          value="flex-end"
+          id="justify-content-flex-end"
+        /><label for="justify-content-flex-end">flex-end</label>
+      </div>
+      <div>
+        <input
+          type="radio"
+          name="justify-content"
+          value="center"
+          id="justify-content-center"
+        /><label for="justify-content-center">center</label>
+      </div>
+      <div>
+        <input
+          type="radio"
+          name="justify-content"
+          value="space-between"
+          id="justify-content-space-between"
+        /><label for="justify-content-space-between">space-between</label>
+      </div>
+      <div>
+        <input
+          type="radio"
+          name="justify-content"
+          value="space-around"
+          id="justify-content-space-around"
+        /><label for="justify-content-space-around">space-around</label>
+      </div>
+      <div>
+        <input
+          type="radio"
+          name="justify-content"
+          value="space-evenly"
+          id="justify-content-space-evenly"
+        /><label for="justify-content-space-evenly">space-evenly</label>
+      </div>
+    </div>
+    <div class="descriptions">
+      <h5 id="descriptions-flex-start" style="display: block">
+        flex-start (기본값) 아이템들을 시작점으로 정렬합니다.
+        <br />flex-direction이 row(가로 배치)일 때는 왼쪽, column(세로 배치)일
+        때는 위예요.
+      </h5>
+      <h5 id="descriptions-flex-end">
+        아이템들을 끝점으로 정렬합니다. <br />flex-direction이 row(가로 배치)일
+        때는 오른쪽, column(세로 배치)일 때는 아래예요.
+      </h5>
+      <h5 id="descriptions-center">아이템들을 가운데로 정렬합니다.</h5>
+      <h5 id="descriptions-space-between">
+        아이템들의 “사이(between)”에 균일한 간격을 만들어 줍니다.
+      </h5>
+      <h5 id="descriptions-space-around">
+        아이템들의 “둘레(around)”에 균일한 간격을 만들어 줍니다.
+      </h5>
+      <h5 id="descriptions-space-evenly">
+        아이템들의 사이와 양 끝에 균일한 간격을 만들어 줍니다. <br />주의! IE와
+        엣지(Edge)에서는 지원되지 않습니다👎
+      </h5>
+    </div>
+    <div class="css-display">
+      .flex-container { <br />
+      &nbsp;&nbsp;display: flex;<br />
+      &nbsp;&nbsp;justify-content:
+      <span id="justify-content-value">flex-start</span>;<br />
+      &nbsp;&nbsp;background-color: lightgray;<br />
+      }
+    </div>
+    <script>
+      const radios = document.querySelectorAll('input[name="justify-content"]');
+      const flexContainer = document.querySelector('.flex-container');
+      const descriptions = document.querySelectorAll('.descriptions > h5');
+      const justifyContentValue = document.getElementById(
+        'justify-content-value'
+      );
+
+      radios.forEach((radio) => {
+        radio.addEventListener('change', (event) => {
+          // 선택된 justify-content 값으로 flex-container 스타일 적용
+          flexContainer.style.justifyContent = event.target.value;
+          // 선택된 값을 css-display 영역에 표시
+          justifyContentValue.textContent = event.target.value;
+
+          // 모든 설명 숨기기
+          descriptions.forEach((description) => {
+            description.style.display = 'none';
+          });
+
+          // 선택된 값에 해당하는 설명만 표시하기
+          const selectedDescription = document.getElementById(
+            `descriptions-${event.target.value}`
+          );
+          if (selectedDescription) {
+            selectedDescription.style.display = 'block';
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

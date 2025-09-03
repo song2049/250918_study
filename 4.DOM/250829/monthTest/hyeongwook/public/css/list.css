@@ -1,0 +1,56 @@
+#header {
+    margin: 0 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    max-width: 1000px;
+    min-width: 500px;
+}
+
+#header>h1 {
+    padding: 20px;
+}
+
+#header>.header-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    border: 1px solid #474747
+}
+
+#header>.header-table>thead {
+    background-color: #313131;
+    height: 30px;
+    color: white;
+    padding: 12px 15px;
+
+}
+
+#header>.header-table>tbody>tr {
+    height: 50px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+#header>.header-table>tbody>tr:hover {
+    background-color: #edffe6;
+}
+
+#header>.button-area {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    padding-top: 30px;
+}
+
+#header>.button-area>.btn-create {
+    width: 100px;
+    height: 30px;
+    border: 0;
+    background-color: #110158;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+}

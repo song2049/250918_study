@@ -1,0 +1,28 @@
+.number-group {
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+}
+.two {
+    width: 100px;
+    height: 100px;
+    display: block;
+}
+
+/* 
+    1. 블록 형태로 변경
+    2. 배경색을 빨간색으로 변경
+*/
+
+/* `>`: 직계 자식 선택자 */
+.number-group > .number-group-one {
+    display: block;
+    background-color: red;
+}
+
+/* `+`: 인접 형제 선택자 */
+
+.number-group-one + div {
+    background-color: blue;
+}

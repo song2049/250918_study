@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q & A</title>
+    <link rel="stylesheet" href="./public/css/common.css">
+    <link rel="stylesheet" href="./public/css/view.css">
+</head>
+<body>
+    <div id="header">
+        <h1>Q & A - 신규등록</h1>
+        <h3>게시물 내용</h3>
+        <form action="#" name= "formBoard" class="formBoard">
+            <div class="grpInputRow">
+                <label class="lblHeader" for="userId">작성자 ID</label>
+                <input class="inputField" placeholder="아이디 입력" name="userId" type="text">
+            </div>
+            <div class="grpInputRow">
+                <label class="lblHeader" for="title">질문 제목</label>
+                <input class="inputField" placeholder="제목 입력" name="title" type="text">
+            </div>
+            <div class="grpInputRow">
+                <label class="lblHeader" for="content">상세내용</label>
+                <textarea class="inputTxtArea" name="content" placeholder="내용 입력"></textarea>
+            </div>
+        </form>
+
+        <h3>댓글 현황</h3>
+        <form action="#" name ="formReply" class="formReply">
+            <div class="replyCard">
+                <input class="replyCard-Input" placeholder="아이디 입력" name="reUserId" type="text">
+                <input class="replyCard-Input" placeholder="제목 입력" name="reTitle" type="text">
+                <textarea class="replyCard-TxtArea" name="reContent" placeholder="내용 입력"></textarea>
+            </div>
+            <div class="btnArea">
+                <button class="btnUpdate" type="submit" value="update">수정</button> 
+                <button class="btnSave" type="submit" value="save">등록</button>    
+            </div>
+            <hr>
+            <!-- <div class="replyCard">
+                <p>작성자 : 테스트
+                    <a href="./view.html?appKind=detail&amp;userId=111&amp;index=0">[수정]</a>
+                </p>
+                <p><label>제목</label><span>222</span></p>
+                <p>내용 : 333</p>
+                <p>작성일 : 2025-08-29</p>
+            </div> -->
+            
+        </form>
+    </div>
+    
+    <script src="./public/js/create.js"></script> <!-- appKind === Create -->
+    <script src="./public/js/delete.js"></script> <!-- appKind === Delete -->
+    <script src="./public/js/detail.js"></script> <!-- appKind === Read -->
+    <script src="./public/js/update.js"></script> <!-- appKind === update -->
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+h1 {
+    padding: 10px 30px;
+}
+
+#studentList {
+     list-style: none;
+     font-weight: 600;
+}
+
+
+#studentList > li > p {
+    padding: 0 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 200px;
+    background-color: antiquewhite;
+}

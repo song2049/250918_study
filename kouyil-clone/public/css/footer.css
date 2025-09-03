@@ -1,0 +1,110 @@
+#footer {
+  padding: 50px 0;
+  color: white;
+  background: #40405d;
+}
+
+#footer ul,
+#footer li {
+  list-style: none;
+}
+
+.footer-inner {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-direction: column;
+  gap: 45px;
+}
+
+.footer-inner > .footer-inner-other {
+  display: flex;
+  gap: 45px;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.footer-inner > .footer-inner-address {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-inner > .footer-inner-address > li {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-inner > .footer-inner-address > li > h3 {
+  width: 100%;
+  max-width: 150px;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.footer-inner > .footer-inner-address > li > p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.footer-inner > .footer-inner-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 27px;
+  width: 490px;
+}
+
+.footer-inner > .footer-inner-info > li {
+  display: flex;
+  position: relative;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.footer-inner > .footer-inner-info > li:nth-of-type(1)::after,
+.footer-inner > .footer-inner-info > li:nth-of-type(3)::after {
+  content: '';
+  position: absolute;
+  top: 7px;
+  right: -13px;
+  display: block;
+  width: 1px;
+  height: 14px;
+  background: #dddddd;
+}
+
+.footer-inner > .footer-inner-sns {
+  display: flex;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 40px;
+  justify-content: space-between;
+}
+
+.footer-inner > .footer-inner-sns > li {
+  display: flex;
+  gap: 10px;
+}
+.footer-inner > .footer-inner-sns > li > a {
+  color: white;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration: none;
+}
+
+.footer-inner > .footer-inner-sns > li > a:nth-of-type(2)::before,
+.footer-inner > .footer-inner-sns > li > a:nth-of-type(3)::before,
+.footer-inner > .footer-inner-sns > li > a:nth-of-type(4)::before {
+  content: '·';
+  margin-right: 10px;
+}
+
+.footer-inner > .footer-inner-sns > p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  opacity: 0.3;
+}

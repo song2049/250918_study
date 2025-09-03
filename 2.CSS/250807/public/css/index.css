@@ -1,0 +1,30 @@
+/* 선택할 수 있는 엘리먼트를 최대한 선택해주셔야 합니다. */
+
+.header-top {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0 220px 0 220px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 왼쪽 영역 */
+.header-top > .header-top-tel > span {
+    font-size: 13px;
+    color: #666666;
+    font-weight: 600;
+    display: block;
+}
+
+.header-top > .header-top-tel > a {
+    font-size: 26px;
+    line-height: 31px;
+    color: #6842ff;
+    font-weight: 900;
+}
+
+/* 오른쪽 영역 */
+.logo {
+    width: 200px;
+    height: 38px;
+}

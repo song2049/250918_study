@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q & A</title>
+    <link rel="stylesheet" href="./public/css/common.css">
+    <link rel="stylesheet" href="./public/css/update.css">
+</head>
+
+<body>
+    <div id="header">
+        <!-- <h1>댓글수정</h1> -->
+        <h3>댓글 수정</h3>
+        <form action="#" name="formBoard" class="formBoard">
+            <div class="grpInputRow">
+                <label class="lblHeader" for="userId">작성자 ID</label>
+                <input class="inputField" placeholder="아이디 입력" name="updateUserId" type="text">
+            </div>
+            <div class="grpInputRow">
+                <label class="lblHeader" for="title">제목</label>
+                <input class="inputField" placeholder="제목 입력" name="updateTitle" type="text">
+            </div>
+            <div class="grpInputRow">
+                <label class="lblHeader" for="content">내용</label>
+                <textarea class="inputTxtArea" name="updateContent" placeholder="댓글 내용 입력"></textarea>
+            </div>
+            <div class="grpInputRow">
+                <label class="lblHeader" for="title">작성일</label>
+                <input class="inputField" placeholder="제목 입력" name="updateRegiDate" type="text">
+            </div>
+            <div class="btnArea">
+                <button class="btnCancel" type="submit" value="cancel">취소</button>
+                <button class="btnSave" type="submit" value="save">저장</button>
+            </div>
+        </form>
+
+    </div>
+
+    <script src="./public/js/update.js"></script> <!-- appKind === update -->
+</body>
+
+</html>

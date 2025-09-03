@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'BookkMyungjo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/BookkMyungjo-Bd.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'BookkMyungjo';
+}

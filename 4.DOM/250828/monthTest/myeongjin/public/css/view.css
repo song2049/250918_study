@@ -1,0 +1,33 @@
+body {
+    background-color: black;
+    color: white;
+}
+#comment{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    height: 100vh;
+}
+textarea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 600px;
+    margin: 20px 10px;
+}
+button {
+    cursor: pointer;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+a {
+    color: white;
+    font-size: larger;
+}

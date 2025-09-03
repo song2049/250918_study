@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML - 구조를 설계하는 능력</title>
+</head>
+
+<body>
+    <h2>문의하기</h2>
+    <ul>
+        <!-- <li> 태그는 기본적으로 블록 요소입니다. -->
+        <li><label for="name">이름</label> <input type="text" id="name" name="name"></li>
+        <li><label for="email">이메일</label> <input type="email" id="email" name="email"></li>
+        <li>
+            <!-- <span> 태그는 인라인 요소입니다. -->
+            <!-- 라디오 버튼은 선택할 수 있는 옵션을 제공합니다. 선택그룹은 name 속성으로 묶습니다.-->
+            <span>문의유형</span>
+            <span><input type="radio" name="inquiry_type" value="bug"> 버그 제보</span>
+            <span><input type="radio" name="inquiry_type" value="feature"> 기능 요청</span>
+        </li>
+        <li><label for="newsletter">뉴스레터 수신 동의</label> <input type="checkbox" id="newsletter" name="newsletter"></li>
+        <li><label for="message">메시지</label> <textarea id="message" name="message"></textarea></li>
+        <li><button type="submit" onClick="alert('문의가 접수되었습니다.')">보내기</button></li>
+    </ul>
+
+    <footer>
+        <p>© 2025 HTML 연습 페이지</p>
+    </footer>
+</body>
+
+</html>

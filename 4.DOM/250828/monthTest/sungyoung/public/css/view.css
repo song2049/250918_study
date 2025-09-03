@@ -1,0 +1,88 @@
+#viewmain {}
+#viewmain > h1 {
+    background-color: #708090;
+    color: aliceblue;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#viewmain> .my_comment > p {
+    font-size: 50px;
+    color: aliceblue;
+
+}
+#viewmain > .my_comment {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    list-style: none;
+    align-items: center;
+    background-color: #778899;
+}
+#viewmain > .my_comment > li {
+    background-color: #F5FFFA;
+    width: 800px;
+    height: 300px;
+    border: 1px solid #F5FFFA;
+    border-radius: 20px;
+    margin: 20px 0;
+}
+#viewmain > .my_comment > li > p {
+    margin: 13px 30px;
+}
+
+#viewmain > .my_comment > li > p:first-child {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#viewmain > .my_comment > li > p:nth-child(2) {
+    text-decoration: 3px #FFE4E1 underline;
+}
+
+#viewmain > .my_comment > li > p:nth-child(3) {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#viewmain > .my_comment > li > p:nth-child(4) {
+    text-decoration: 3px #FFE4E1 underline;
+}
+
+#viewmain > .my_comment > li > p:nth-child(5) {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#viewmain > .my_comment > li > p:nth-child(6) {
+    text-decoration: 3px #FFE4E1 underline;
+}
+
+#viewmain > .my_comment > li > p:nth-child(7) {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#viewmain > .my_comment > li > p:nth-child(8) {
+    text-decoration: 3px #FFE4E1 underline;
+}
+
+#viewmain > .button_list {
+    height: 550px;
+    background-color: #708090;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#viewmain > .button_list > button {
+    width: 1000px;
+    height: 35px;
+    margin: 20px 0;
+    border: 0px;
+    background-color: #2F4F4F;
+    border-radius: 5px;
+    color: aliceblue;
+}
+

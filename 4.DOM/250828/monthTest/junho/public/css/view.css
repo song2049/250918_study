@@ -1,0 +1,26 @@
+.comment-retouch {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+
+}
+
+.comment-retouch>.information {
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+    gap: 10px;
+}
+
+.information>input {
+    border: 3px solid lightsteelblue;
+    padding: 3%;
+
+}
+
+.information>textarea {
+    padding: 3%;
+    border: 3px solid lightsteelblue;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - 로그인</title>
+    <!-- CSS 사용하는 간단 문법, 주의!: 자세한 정보는 내일! 드릴건데, 스포하는겁니다. -->
+    <style>
+        #main {
+            background-color: red;
+            color: white;
+            font-size: 100px;
+        }
+
+        #header {}
+
+        .main2 {}
+
+        /* [#또는.][속성의이름] {} */
+    </style>
+</head>
+
+<body>
+    <!-- 주의할 점은! "화면"을 만들어서 블록 인라인 형태를 더 많이 알아보는거지 -->
+    <!-- 실제로 로그인 되는 것을 만드는 것은 아님! -->
+    <h1>로그인</h1>
+    <ul>
+        <li>
+            <span>아이디</span>
+            <!-- 단일 태그 (self-closing tag) -->
+            <input type="text" placeholder="아이디 적으라!" />
+            <img src="image.png" />
+        </li>
+        <li>
+            <span>비밀번호</span>
+            <input type="password" placeholder="비밀번호 적으라!" />
+        </li>
+        <li>
+            <span>로그인 버튼</span>
+            <button>로그인</button>
+        </li>
+    </ul>
+
+    <!-- 시멘틱 태그: 의도를 가진 엘리먼트 -->
+    <!-- 시맨틱: 의미 있는, 의미론적인 -->
+    <div id="main" class="main2">
+        나는 메인!
+    </div>
+    <div id="header"></div>
+    <main>
+        <header></header>
+        <section></section>
+        <article></article>
+        <footer></footer>
+    </main>
+</body>
+
+</html>

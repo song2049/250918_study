@@ -1,0 +1,30 @@
+body {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+h1 {
+    text-align: center;
+    border-bottom: 3px solid white;
+
+}
+
+.update-form {
+    text-align: center;
+    border: 2px solid white;
+    margin: 0 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+}
+
+.update-form > button {
+    cursor: pointer;
+    
+}
+.update-form > textarea {
+    height: 300px;
+}
+

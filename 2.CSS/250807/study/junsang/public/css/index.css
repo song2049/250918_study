@@ -1,0 +1,48 @@
+/* 선택할수 있는 엘리먼트 최대한 선택
+#header{} */
+/* .header-top > a{} */
+/* .header-top > .header-top-tel{} */
+/* .header-top > a{} > .logo{} */
+.header-top {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0 220px 0 220px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*flex는 부모한테*/
+/*왼쪽*/
+.header-top > .header-top-tel > span {
+    font-size: 13px;
+    color: #666666;
+    font-weight: 600;
+    display: block;
+}
+
+.header-top > .header-top-tel > a {
+    font-size: 26px;
+    line-height: 31px;
+    color: #6842ff;
+    font-weight: 900;
+}
+/*오른쪽*/
+.logo {
+    width: 200px;
+    height: 30px;
+    display: block;
+}
+.top_contents {
+    border: solid;
+    margin: 10px 220px 10px 220px;
+    height: 50px;
+    border-width: 1px 0 0;
+    border-color: rgb(201, 201, 201);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+}
+.top_contents > #top_contents_color {
+    color: red;
+}

@@ -1,0 +1,70 @@
+body {
+   background-color: black; 
+   color: white;
+}
+h1{
+    text-align: center;
+    padding: 1.5%;
+    border-bottom: 3px solid white;
+}
+
+textarea {
+  height: 300px;
+
+}
+.comment-form > button {
+    height: 50px;
+    font-size: larger;
+}
+.comment-form {
+    text-align: center;
+    display: flex;
+    flex-direction: column;     
+    justify-items: center;
+    padding: 1% 20%;
+    gap: 20px;
+    height: 400px;
+}
+.comment-form > input {
+    height: 50px;
+}
+.comments-list {
+    padding: 5px;
+    margin: 0 auto;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    border: 3px solid wheat;
+    gap: 10px;
+}
+.comments-list > li {
+    border: 3px solid rebeccapurple;
+    border-radius: 6px;
+    background-color: white;
+    width: 80%;
+    height: 80px;
+    margin: 0 auto;
+    text-align:center;
+    position: relative;
+}
+.comments-list > li > button {
+    color: red;
+    position: absolute;
+    right: 5%;
+    top: 20px;
+    width: 100px;
+    height: 30px;
+    background-color: black;
+    cursor: pointer;
+}
+
+.logo {
+    position: fixed;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1000px; 
+    opacity: 1;
+    z-index: -1;  
+}

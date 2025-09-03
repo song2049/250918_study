@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>댓글 목록 페이지</title>
+    <link rel="stylesheet" href="../PUBLIC/CSS/reset.css">
+    <link rel="stylesheet" href="../PUBLIC/CSS/list.css">
+</head>
+
+<body>
+    <div id="comments">
+        <h1>댓글 목록</h1>
+        <ul class="comments-list"></ul>
+        <form class="comments-form" action="./view.html" method="get">
+            <input type="text" name="userid" placeholder="유저 아이디 입력">
+            <input type="text" name="title" placeholder="제목 입력">
+            <textarea name="board" placeholder="글 내용 입력"></textarea>
+            <button type="submit">댓글 작성</button>
+        </form>
+    </div>
+    <script src="../PUBLIC/utils/getToday.js"></script>
+    <script src="../PUBLIC/JS/read.js"></script>
+    <script src="../PUBLIC/JS/create.js"></script>
+    <script src="../PUBLIC/JS/delete.js"></script>
+</body>
+
+</html>

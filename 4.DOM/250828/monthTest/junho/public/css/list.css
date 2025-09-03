@@ -1,0 +1,63 @@
+/*
+    <li class = "box">
+    <a class = "box-title">제목:</a>
+    <span class = "delete-button">❌</span>
+    <p>아이디: rhvhthch</p>
+    <p>내용: 작성<p>
+    </li>
+*/
+
+#comments-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+#comments-box>.comment-list {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding: 50px;
+    flex-direction: column;
+}
+
+#comments-box>.comment-list>.box {
+    border: 3px solid lightsteelblue;
+    border-radius: 10px;
+    background-color: lightskyblue;
+    font-weight: bold;
+    padding: 30px;
+}
+
+.comment-list>.box>.box-title {
+    display: inline-block;
+    width: 85%;
+}
+
+.list-box>input {
+    text-align: center;
+    border: 3px solid lightsteelblue;
+    padding: 10px;
+    font-weight: 500;
+}
+
+.list-box>textarea {
+    text-align: center;
+    border: 3px solid lightsteelblue;
+    padding: 116.5px;
+    font-weight: 500;
+    display: flex;
+}
+
+.list-box>button {
+    cursor: pointer;
+    padding: 10px;
+    font-weight: 500;
+
+}
+
+#comments-box>.comment-list>.box>.delete-button {
+    cursor: pointer;
+}

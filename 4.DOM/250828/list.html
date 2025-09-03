@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>댓글 목록 페이지</title>
+    <link rel="stylesheet" href="./public/css/comment/common.css">
+    <link rel="stylesheet" href="./public/css/comment/list.css">
+    <!-- <link rel="stylesheet" href="./public/css/sidebar/sidebar.css"> -->
+</head>
+<body>
+    <div id="comments">
+        <h1>댓글 목록</h1>
+        <div class="inner">
+            <ul class="comment-list"></ul>
+            <form class="comment-form" action="./list.html" method="get">
+                <input type="text" name="userId" placeholder="유저 아이디 입력">
+                <input type="text" name="title" placeholder="제목입력">
+                <textarea name="content" placeholder="글 내용 입력" cols="" rows="8"></textarea>
+                <button type="submit">댓글 작성</button>
+            </form>
+        </div>
+    </div>
+    <script src="./public/js/comment/list.js"></script>
+    <script src="./public/js/comment/create.js"></script>
+    <script src="./public/js/comment/delete.js"></script>
+</body>
+</html>
+
+<!-- 
+    교강사 회고록
+
+    사이트는 기본적으로 사이드바를 가지고 있음.
+    이동 할 수 있는 수단
+    지금은 CRUD밖에 없지만, 이동할 수 있는 수단이 필요할 수 있음.
+
+    그 메뉴를 표현하는 공간은 사이드 바로 표시할거임
+-->
+<!-- 
+     햄버거 표시
+    <input type="checkbox" id="sidebar-toggle" hidden>
+    <label for="sidebar-toggle" class="toggle-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+     사이드 바 표시
+    <div id="sidebar">
+        <img id="logo" src="./public/img/logo.png" alt="이미지 없음">
+        <ul>
+            <li><a href="#">모집중인 강의</a></li>
+            <li><a href="#">과정소개</a></li>
+            <li><a href="#">지원제도</a></li>
+            <li><a href="#">경일스토리</a></li>
+            <li><a href="#">상담신청</a></li>
+            <li><a href="#">회사소개</a></li>
+        </ul>
+    </div> 
+-->
