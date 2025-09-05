@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git을 활용한 CR구현</title>
+    <link rel="stylesheet" href="./public/css/reset.css">
+    <link rel="stylesheet" href="./public/css/index.css">
+</head>
+<body>
+    <div id = "comments">
+        <h1>댓글 목록</h1>
+        <ul class = "comment-list"></ul>
+        <form action="https://google.com" class="comment-form" method="get">
+            <input type="text" name="userID" placeholder="ID 입력">
+            <input type="text" name="title" placeholder="제목 입력">
+            <input type="text" name="write" placeholder="내용 입력">
+            <button type="submit">작성 완료</button>
+        </form>
+    </div>
+    <script src="./public/js/render.js"></script>
+    <script src="./public/js/create.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #FFFAFA;
+}
+
+#listpage {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#listpage > h1 {
+    padding: 20px 0 20px 0;
+}
+
+#listpage > .listpage-ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: center;
+}
+
+#listpage > .listpage-ul > .card {
+    width: 700px;
+    background-color: white;
+    padding: 20px;
+    border: 2px solid #FFC0CB;
+    margin: 10px 0;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+#listpage > .listpage-ul > .card > p {
+    text-decoration: underline 2px #40E0D0;
+    margin: 15px 0;
+}
+
+#listpage > .listpage-input {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    padding: 20px 250px;
+    
+}
+
+#listpage > .listpage-input > input:nth-child(1) {
+    margin: 10px 0;
+    height: 60px;
+    border-radius: 10px;
+    border: 2px solid #FF1493;
+    outline: none;
+    text-align: center;
+
+}
+
+#listpage > .listpage-input > input:nth-child(2) {
+    margin: 5px 0;
+    height: 200px;
+    border-radius: 10px;
+    border: 2px solid #FF1493;
+    outline: none;
+    text-align: center;
+}
+
+
+#listpage > .listpage-input > button {
+    border-radius: 10px;
+    margin: 5px 0;
+    height: 50px;
+    background-color: #FFC0CB;
+    border: 0px;
+}
+

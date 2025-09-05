@@ -1,0 +1,21 @@
+commit d7737b4ccf6b925f47ffd4ed9e52c9db1992ecaf
+Author: song2049 <song912049@gmail.com>
+Date:   Thu Sep 4 13:44:42 2025 +0900
+
+    Revert "style : 텍스트 대비 과도하게 낮춤"
+    
+    This reverts commit dc9f51a62a8d24f45bb265e2816a05c88796794b.
+
+diff --git a/250904/styles.css b/250904/styles.css
+index bb114a8..659ab4a 100644
+--- a/250904/styles.css
++++ b/250904/styles.css
+@@ -6,7 +6,7 @@ body {
+     background:#f6f7fb; 
+     margin:0; 
+     padding:24px; 
+-    color:#9aa0b3; 
++    color:#222; 
+ }
+ .container {
+     max-width: var(--max); 

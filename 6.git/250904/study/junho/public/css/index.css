@@ -1,0 +1,29 @@
+#comments {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 100vh;
+}
+#comments > .comment-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+
+}
+
+#comments > .comment-list > .card {
+    border: 3px solid lightsteelblue;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: lightskyblue;
+    width: 200px;
+}
+
+.comment-list > .card > .card-title {
+    display: inline-block;
+    width: 80%;
+}

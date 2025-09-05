@@ -1,0 +1,4 @@
+  develop    6f56966 merge: feature -> develop(UI 개선)
+  feature    d7737b4 Revert "style : 텍스트 대비 과도하게 낮춤"
+  main       c340c85 merge: develop -> main (배포)
+* reset-test c340c85 merge: develop -> main (배포)

@@ -1,0 +1,14 @@
+c340c85 HEAD@{0}: reset: moving to HEAD~1
+c7f4acf HEAD@{1}: commit: reset test용
+c340c85 HEAD@{2}: checkout: moving from main to reset-test
+c340c85 HEAD@{3}: merge develop: Merge made by the 'ort' strategy.
+77075d8 HEAD@{4}: checkout: moving from develop to main
+6f56966 HEAD@{5}: merge feature: Merge made by the 'ort' strategy.
+c3f05b9 HEAD@{6}: checkout: moving from feature to develop
+d7737b4 HEAD@{7}: revert: Revert "style : 텍스트 대비 과도하게 낮춤"
+dc9f51a HEAD@{8}: commit: style : 텍스트 대비 과도하게 낮춤
+623f59c HEAD@{9}: commit: style: UI 개선 - 버튼, 카드 그림자 및 간격 조정
+c3f05b9 HEAD@{10}: checkout: moving from develop to feature
+c3f05b9 HEAD@{11}: commit: feat: Create/Read 기능 구현 (loaclStorage기반)
+77075d8 HEAD@{12}: checkout: moving from main to develop
+77075d8 HEAD@{13}: commit (initial): chore: scaffold 프로젝트 초기 구조(index, css, js)

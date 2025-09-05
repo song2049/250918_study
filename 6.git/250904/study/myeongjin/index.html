@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git + CR 과제</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+    <h1>CR과제 - Create / Read</h1>
+    <p>작성자 + 내용 입력 → 목록으로 확인 (localStorage)</p>
+    </header>
+    
+    <main class="container"> 
+        <section class="form-section">
+            <form id="form">
+                <label>작성자
+                    <input type="text" id="author" placeholder="작성자 이름">
+                </label>
+                <label>내용
+                    <textarea id="content" placeholder="내용 입력"></textarea>
+                </label>
+                <div class="actions">
+                    <button type="submit">저장</button>
+                    <button type="button" id="clear">전체삭제</button>                    
+                </div>
+            </form>
+        </section>
+        <section class="list-section">
+            <input id="search" type="text" placeholder="검색(작성자 또는 내용)"/>
+            <ul id="list"></ul>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
