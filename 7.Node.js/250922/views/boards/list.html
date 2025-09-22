@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시판 리스트</title>
+</head>
+<body>
+    <h1>게시판 리스트</h1>
+    <ul>
+        {% for board in boards %}
+            <div class="board-list">
+                <li class="user-id">{{ board.user_id }}</li>
+                <li>
+                    <!-- GET /boards/view/wnbqudgus5565 -->
+                    <a href="/boards/view/{{ board.user_id }}">{{ board.title }}</a>
+                </li>
+                <li>{{ board.writer }}</li>
+                <li>{{ board.hit }}</li>
+                <li>
+                    <button id="deleteBtn">삭제</button>
+                </li>
+            </div>
+        {% endfor %}
+    </ul>
+    <a href="/boards/write">글 쓰기 페이지</a>
+    <script>
+        const boardList = document.querySelector("ul");
+        const deleteUserById = async(e) => {
+            // 삭제 버튼이 아니면 무시
+            if(!e.target.className === "deleteBtn") return;
+
+            // 버튼이 포함된 board-list 찾기
+            const parent = e.target.closest(".board-list");
+            const user_id = parent.querySelector(".user-id").innerText;
+
+            try {
+                const response = await fetch(`/boards/delete/${user_id}`, { method: "DELETE" });
+                if(!response.ok) throw new Error("삭제 실패");
+                const data = await response.json();
+                alert("삭제 성공", data.message);
+                window.location.href = "/boards";
+            } catch (error) {
+                alert("에러 발생", error.message);
+            }
+        }
+
+        boardList.addEventListener("click", deleteUserById)
+    </script>
+</body>
+</html>
